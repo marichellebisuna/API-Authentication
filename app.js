@@ -2,16 +2,18 @@ const express = require('express');
 const morgan = require('morgan');
 const createErrors = require('http-errors');
 require('dotenv').config();
-
-const AuthRoute = require('./Routes/Auth.route');
+require('./helpers/init_mongodb');
 
 const app = express();
 app.use(morgan('dev'));
 
+//stati files
+app.use(express.static('public'));
+
 app.get('/', async (req, res, next) => {
  res.send('hello from express');
 });
-app.use('/auth', AuthRoute);
+app.use('/auth', require('./Routes/Auth.route'));
 
 //creating error
 app.use(async (req, res, next) => {
