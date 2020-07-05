@@ -8,6 +8,12 @@ POST http://localhost:8000/auth/refresh-token
 
 ###register Route
 POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+ "email":"test@gmail.com",
+ "password":"test"
+}
 
 ###Logout Route
 DELETE http://localhost:8000/auth/logout

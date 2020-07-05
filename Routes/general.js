@@ -1,11 +1,11 @@
-const router = require('express').Router();
+// const router = require('express').Router();
 
-router.get('/', (req, res) => {
- res.render('index');
-});
+// router.get('/', (req, res) => {
+//  res.render('index');
+// });
 
-router.get('/home', (req, res) => {
- res.render('home');
-});
+// router.get('/home', (req, res) => {
+//  res.render('home');
+// });
 
-module.exports = router;
+// module.exports = router;
