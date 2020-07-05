@@ -1,0 +1,26 @@
+{
+  "name": "api_authentication",
+  "version": "1.0.0",
+  "description": "api authentication on nodejs jwt redis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marichellebisuna/API-Authentication.git"
+  },
+  "keywords": [
+    "api",
+    "authentication",
+    "jwt",
+    "node",
+    "redis"
+  ],
+  "author": "Mrs Marichelle Bisuna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marichellebisuna/API-Authentication/issues"
+  },
+  "homepage": "https://github.com/marichellebisuna/API-Authentication#readme"
+}
