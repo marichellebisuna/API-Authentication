@@ -1,4 +1,13 @@
 GET http://localhost:8000
 
-###
-GET http://localhost:8000/abc_xyz
+###Login Route
+POST http://localhost:8000/auth/login
+
+###refresh-token Route
+POST http://localhost:8000/auth/refresh-token
+
+###register Route
+POST http://localhost:8000/auth/register
+
+###Logout Route
+DELETE http://localhost:8000/auth/logout
