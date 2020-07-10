@@ -2,9 +2,9 @@
  "name": "api_authentication",
  "version": "1.0.0",
  "description": "api authentication on nodejs jwt redis",
- "main": "app.js",
+ "main": "server.js",
  "scripts": {
-  "start": "nodemon app.js"
+  "start": "nodemon server.js"
  },
  "repository": {
   "type": "git",
@@ -25,8 +25,11 @@
  "homepage": "https://github.com/marichellebisuna/API-Authentication#readme",
  "dependencies": {
   "@hapi/joi": "^17.1.1",
+  "bcrypt": "^5.0.0",
+  "cors": "^2.8.5",
   "dotenv": "^8.2.0",
   "express": "^4.17.1",
+  "helmet": "^3.23.3",
   "http-errors": "^1.8.0",
   "mongoose": "^5.9.21",
   "morgan": "^1.10.0",

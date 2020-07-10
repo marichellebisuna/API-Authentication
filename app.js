@@ -1,11 +1,19 @@
 const express = require('express');
 const morgan = require('morgan');
 const createErrors = require('http-errors');
+const helmet = require('helmet');
+const cors = require('cors');
 require('dotenv').config();
 require('./helpers/init_mongodb');
 
 const app = express();
 app.use(morgan('dev'));
+app.use(helmet());
+app.use(
+ cors({
+  origin: 'http://localhost:8000',
+ })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -40,8 +48,4 @@ app.use((err, req, res, next) => {
  });
 });
 
-const PORT = process.env.PORT || 8000;
-
-app.listen(PORT, () => {
- console.log(`Server running at port ${PORT}.`);
-});
+module.exports = app;
